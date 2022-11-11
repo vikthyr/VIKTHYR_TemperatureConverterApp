@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_by_author">by VIKTHYR</string>
+    <string name="app_author" translatable="false">VIKTHYR</string>
+
+    <string name="actionBar_copy">Copy Result</string>
+    <string name="from_text_english">From</string>
+    <string name="to_text_english">To</string>
+    <string name="info_button_description">Info</string>
+    <string name="redefine_button_description">Redefine</string>
+    <string name="right_arrow_contetDescription">From_Scale - To_Scale arrow</string>
+    <string name="invert_conversion_contetDescription">Invert Conversion</string>
+    <string name="value_to_convert">Value</string>
+    <string name="formula_info_title">Formula info</string>
+    <string name="formula_info_message">Select a conversion to view the formula</string>
+    <string name="toast_resultIsEmpty">Result is empty</string>
+    <string name="toast_copiedToClipboard">Copied to clipboard!</string>
+    <string name="toast_conversionRedefined">Conversion redefined</string>
+
+    <string name="celsius_scale" translatable="false">Celsius</string>
+    <string name="fahrenheit_scale" translatable="false">Fahrenheit</string>
+    <string name="kelvin_scale" translatable="false">Kelvin</string>
+    <string name="reaumur_scale" translatable="false">Réaumur</string>
+    <string name="rankine_scale" translatable="false">Rankine</string>
+    <string name="newton_scale" translatable="false">Newton</string>
+    <string name="delisle_scale" translatable="false">Delisle</string>
+    <string name="romer_scale" translatable="false">Rømer</string>
+
+    <string name="celsius_sufix" translatable="false">°C</string>
+    <string name="fahrenheit_sufix" translatable="false">°F</string>
+    <string name="kelvin_sufix" translatable="false">K</string>
+    <string name="reaumur_sufix" translatable="false">°Ré</string>
+    <string name="rankine_sufix" translatable="false">°Ra</string>
+    <string name="newton_sufix" translatable="false">°N</string>
+    <string name="delisle_sufix" translatable="false">°De</string>
+    <string name="romer_sufix" translatable="false">°Rø</string>
+    <string name="app_name">Temperature Converter</string>
+
+
+</resources>

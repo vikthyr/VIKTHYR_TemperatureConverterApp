@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/lightColor"
+    android:id="@+id/customActionBar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageButton
+        android:id="@+id/btn_copyResult"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/lightColor"
+        android:contentDescription="@string/actionBar_copy"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="3dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_viewFormula"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_content_copy_24"
+        app:tint="@color/darkerColor" />
+
+    <ImageButton
+        android:id="@+id/btn_clearAll"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/lightColor"
+        android:contentDescription="@string/redefine_button_description"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="3dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_refresh_24"
+        app:tint="@color/darkerColor" />
+
+    <TextView
+        android:id="@+id/title_actionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/darkerColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/title_actionBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:text="@string/app_by_author"
+        android:textColor="@color/darkerColor"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/title_actionBar"
+        app:layout_constraintStart_toStartOf="@+id/title_actionBar" />
+
+    <ImageButton
+        android:id="@+id/btn_viewFormula"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/lightColor"
+        android:contentDescription="@string/info_button_description"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="3dp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clearAll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_info_24"
+        app:tint="@color/darkerColor" />
+
+    <ImageView
+        android:id="@+id/title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/darkerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_device_thermostat_36" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

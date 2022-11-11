@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Conversor de Temperatura</string>
+    <string name="app_by_author">por VIKTHYR</string>
+    <string name="actionBar_copy">Copiar Resultado</string>
+    <string name="from_text_english">De</string>
+    <string name="to_text_english">Para</string>
+    <string name="info_button_description">Informação</string>
+    <string name="redefine_button_description">Redefinir</string>
+    <string name="right_arrow_contetDescription">Seta De-Para</string>
+    <string name="invert_conversion_contetDescription">Inverter Conversão</string>
+    <string name="value_to_convert">Valor</string>
+    <string name="formula_info_title">Fórmula</string>
+    <string name="toast_resultIsEmpty">Resultado está vazio</string>
+    <string name="toast_copiedToClipboard">Copiado para a área de transferência!</string>
+    <string name="formula_info_message">Selecione uma conversão para ver a fórmula</string>
+    <string name="toast_conversionRedefined">Conversão redefinida</string>
+</resources>
