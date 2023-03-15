@@ -142,7 +142,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (!text_toConvertValue.getText().toString().isEmpty()) {
-                    text_result.setText(String.valueOf(CalculateTemperature(text_toConvertValue.getText().toString())));
+                    if(text_toConvertValue.getText().toString().equals(".")){
+                        text_toConvertValue.setText("0.");
+                        text_toConvertValue.setSelection(text_toConvertValue.getText().length());
+                    }
+                    if(text_toConvertValue.getText().toString().equals("-.")){
+                        text_toConvertValue.setText("-0.");
+                        text_toConvertValue.setSelection(text_toConvertValue.getText().length());
+                    }
+                    if(!text_toConvertValue.getText().toString().equals("-") && !text_toConvertValue.getText().toString().equals("-.")) {
+                        text_result.setText(String.valueOf(CalculateTemperature(text_toConvertValue.getText().toString())));
+                    }
                 } else {
                     text_result.setText("");
                 }
@@ -474,7 +484,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
             if (!text_toConvertValue.getText().toString().isEmpty()) {
-                text_result.setText(String.valueOf(CalculateTemperature(text_toConvertValue.getText().toString())));
+                if(!text_toConvertValue.getText().toString().equals("-") && !text_toConvertValue.getText().toString().equals("-.")){
+                    text_result.setText(String.valueOf(CalculateTemperature(text_toConvertValue.getText().toString())));
+                }
             } else {
                 text_result.setText("");
             }
